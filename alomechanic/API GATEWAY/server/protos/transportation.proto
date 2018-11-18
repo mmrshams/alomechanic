@@ -1,0 +1,23 @@
+
+syntax = "proto3";
+
+package transportation_app_package;
+
+service transportation {
+    rpc gettransportation (msg) returns (amount) {}
+  
+}
+
+message msg {
+
+    string categoryId = 1 ;
+    string serviceId = 2 ;
+    string productId = 3 ; 
+}
+
+message amount {
+    int32 amount = 1;
+    string err_status = 2;
+    
+}
+

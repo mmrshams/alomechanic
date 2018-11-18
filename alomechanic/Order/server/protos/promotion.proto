@@ -1,0 +1,23 @@
+
+syntax = "proto3";
+
+package promotion_app_package;
+
+service promotion {
+    rpc getDiscount (msg) returns (amount) {}
+
+}
+
+message msg {
+
+    string customerId = 1;
+    string categoryId = 2 ;
+    string serviceId = 3 ;
+    string productId = 4 ;
+}
+
+message amount {
+    int32  amount = 1;
+
+}
+
